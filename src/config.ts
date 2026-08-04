@@ -3,11 +3,11 @@ export const PRODUCT_CONFIG = {
   subtitle:
     "Como transformar fotos comuns de produtos em artes comerciais para Instagram, Stories e WhatsApp — mesmo sem saber design.",
   price: "R$37,90",
-  checkoutUrl: "[LINK DO CHECKOUT DA KIWIFY]",
+  checkoutUrl: "https://pay.kiwify.com.br/zZ69g7X",
   guaranteeDays: "7 dias",
   supportContact: "igorisaque466@gmail.com",
   author: "Igor Isaque da Silva Porfírio",
-  siteUrl: "[URL FINAL DO SITE NA VERCEL]",
+  siteUrl: "https://ebook-artes-com-chat-gpt.vercel.app/",
 };
 
 export function trackCheckoutClick(location: string): void {
