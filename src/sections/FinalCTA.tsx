@@ -1,16 +1,20 @@
 import SafeImage from "../components/SafeImage";
 import CheckoutButton from "../components/CheckoutButton";
-import { PRODUCT_CONFIG } from "../config";
+import PriceBlock from "../components/PriceBlock";
+import { PRODUCT_CONFIG, formatEndDate } from "../config";
+import { useCountdown } from "../hooks/useCountdown";
 
 export default function FinalCTA() {
+  const { active } = useCountdown();
+
   return (
     <section className="section section-cta" aria-labelledby="final-cta-title">
       <div className="container final-cta-grid">
         <SafeImage
           src="/ebook-mockup.png"
           alt="Mockup do ebook Artes que Vendem com ChatGPT"
-          width={220}
-          height={290}
+          width={200}
+          height={260}
         />
 
         <div>
@@ -19,15 +23,22 @@ export default function FinalCTA() {
             muito mais bem planejado.
           </h2>
 
+          <PriceBlock />
+
           <div className="final-cta-details">
-            <span>{PRODUCT_CONFIG.price}</span>
-            <span>Garantia de {PRODUCT_CONFIG.guaranteeDays}</span>
+            <span>Garantia de {PRODUCT_CONFIG.guaranteeDays} dias</span>
             <span>Acesso imediato</span>
           </div>
 
           <CheckoutButton location="final_cta">
             QUERO CRIAR MINHAS PRÓPRIAS ARTES
           </CheckoutButton>
+
+          {active && (
+            <p className="microtext microtext-light">
+              Oferta de lançamento disponível até {formatEndDate()}.
+            </p>
+          )}
         </div>
       </div>
     </section>

@@ -1,18 +1,19 @@
 const OBJECTIONS = [
   {
+    question: "Não sei design",
+    answer: "O método foi feito para iniciantes, com passo a passo visual.",
+  },
+  {
     question: "Não sei usar Photoshop",
-    answer:
-      "O método foi desenvolvido para iniciantes e utiliza principalmente ChatGPT e Canva.",
+    answer: "Você usa principalmente ChatGPT e Canva — sem programas complexos.",
   },
   {
     question: "Meus produtos são de outro segmento",
-    answer:
-      "O Método PRODUTO pode ser adaptado a diferentes produtos físicos, públicos e formatos.",
+    answer: "O Método PRODUTO se adapta a diferentes produtos e públicos.",
   },
   {
     question: "A IA sempre erra minhas imagens",
-    answer:
-      "O ebook mostra como reduzir erros, proteger elementos importantes e corrigir o que não saiu como esperado.",
+    answer: "O ebook ensina a proteger detalhes e corrigir o que sair errado.",
   },
 ];
 
@@ -20,9 +21,7 @@ export default function ObjectionsSection() {
   return (
     <section className="section" aria-labelledby="objections-title">
       <div className="container">
-        <h2 id="objections-title">
-          Você não precisa ser designer para começar
-        </h2>
+        <h2 id="objections-title">Você não precisa ser designer para começar</h2>
 
         <div className="objections-grid">
           {OBJECTIONS.map((item) => (

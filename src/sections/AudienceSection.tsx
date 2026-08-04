@@ -1,20 +1,15 @@
 const FOR = [
-  "pequenos empreendedores",
-  "lojas",
-  "distribuidores",
-  "fabricantes",
-  "artesãos",
-  "vendedores autônomos",
-  "pessoas que vendem no Instagram",
-  "pessoas que utilizam o WhatsApp",
+  "pequenos empreendedores e lojas",
+  "fabricantes e distribuidores",
+  "artesãos e vendedores autônomos",
+  "quem vende no Instagram e WhatsApp",
   "iniciantes em design",
 ];
 
 const NOT_FOR = [
-  "espera resultado perfeito sem realizar testes",
+  "espera resultado perfeito sem testar",
   "não pretende revisar as imagens",
-  "quer copiar outras marcas",
-  "procura promessa de vendas garantidas",
+  "busca promessa de vendas garantidas",
 ];
 
 export default function AudienceSection() {
@@ -25,7 +20,7 @@ export default function AudienceSection() {
 
         <div className="audience-grid">
           <div>
-            <h3>É indicado para</h3>
+            <h3>É para você</h3>
             <ul>
               {FOR.map((item) => (
                 <li key={item}>{item}</li>
@@ -33,7 +28,7 @@ export default function AudienceSection() {
             </ul>
           </div>
           <div>
-            <h3>Não é indicado para quem</h3>
+            <h3>Não é para você, se</h3>
             <ul>
               {NOT_FOR.map((item) => (
                 <li key={item}>{item}</li>

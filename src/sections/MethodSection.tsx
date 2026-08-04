@@ -5,7 +5,7 @@ const LETTERS = [
   { letter: "D", word: "Direção" },
   { letter: "U", word: "Uso e formato" },
   { letter: "T", word: "Texto" },
-  { letter: "O", word: "O que não pode ser alterado" },
+  { letter: "O", word: "O que não pode ser alterado", wide: true },
 ];
 
 export default function MethodSection() {
@@ -18,16 +18,45 @@ export default function MethodSection() {
 
         <div className="method-grid">
           {LETTERS.map((item, index) => (
-            <div className="method-card" key={`${item.letter}-${index}`}>
+            <div
+              className={`method-card ${item.wide ? "method-card-wide" : ""}`}
+              key={`${item.letter}-${index}`}
+            >
               <span className="method-letter">{item.letter}</span>
               <span className="method-word">{item.word}</span>
             </div>
           ))}
         </div>
 
+        <div className="method-example">
+          <h3>Exemplo: lançamento de um hidratante</h3>
+          <dl className="method-example-list">
+            <div>
+              <dt>Propósito</dt>
+              <dd>anunciar o lançamento</dd>
+            </div>
+            <div>
+              <dt>Direção</dt>
+              <dd>premium e minimalista</dd>
+            </div>
+            <div>
+              <dt>Uso</dt>
+              <dd>feed 4:5</dd>
+            </div>
+            <div>
+              <dt>Texto</dt>
+              <dd>"Novidade: Hidratante Natural"</dd>
+            </div>
+            <div>
+              <dt>Restrição</dt>
+              <dd>preservar embalagem, tampa e rótulo</dd>
+            </div>
+          </dl>
+        </div>
+
         <p className="section-note">
-          O Método PRODUTO ajuda você a reunir as informações essenciais antes
-          de gerar a imagem, reduzindo interpretações erradas e retrabalho.
+          Em poucos minutos, uma ideia vaga se transforma em um briefing
+          completo para o ChatGPT.
         </p>
       </div>
     </section>

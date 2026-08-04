@@ -1,28 +1,28 @@
 const PAINS = [
-  "você tira a foto, mas não sabe transformá-la em divulgação",
-  "cada postagem fica com uma aparência diferente",
-  "o ChatGPT altera o produto ou a embalagem",
-  "textos e logos ficam incorretos",
-  "você perde tempo repetindo comandos",
-  "contratar um designer para cada publicação pesa no orçamento",
+  "Boas fotos, divulgação fraca",
+  "Produto alterado pela IA",
+  "Textos e logos incorretos",
+  "Design pesando no orçamento",
 ];
 
 export default function PainSection() {
   return (
-    <section className="section section-muted" aria-labelledby="pain-title">
+    <section className="section" aria-labelledby="pain-title">
       <div className="container">
         <h2 id="pain-title">
-          Seus produtos são bons. Suas artes também precisam parecer.
+          Seus produtos são bons. Suas artes também precisam demonstrar
+          isso.
         </h2>
-        <ul className="pain-list">
+        <div className="pain-grid">
           {PAINS.map((pain) => (
-            <li key={pain}>{pain}</li>
+            <div className="pain-card" key={pain}>
+              {pain}
+            </div>
           ))}
-        </ul>
+        </div>
         <p className="pain-conclusion">
-          O problema não é falta de criatividade. O que geralmente falta é um
-          processo claro para explicar à inteligência artificial exatamente o
-          que você precisa.
+          Você não precisa de mais tentativas aleatórias. Precisa de um
+          processo para dizer à IA o que criar, preservar e corrigir.
         </p>
       </div>
     </section>

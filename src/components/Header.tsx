@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { goToCheckout } from "../config";
 
 const LINKS = [
   { href: "#metodo", label: "Método" },
@@ -11,7 +12,7 @@ export default function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      setCompact(window.scrollY > 60);
+      setCompact(window.scrollY > 40);
     }
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -28,6 +29,13 @@ export default function Header() {
             </a>
           ))}
         </nav>
+        <button
+          type="button"
+          className="header-cta"
+          onClick={() => goToCheckout("header")}
+        >
+          QUERO O EBOOK
+        </button>
       </div>
     </header>
   );

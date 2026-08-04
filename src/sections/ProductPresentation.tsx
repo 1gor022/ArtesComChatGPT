@@ -1,30 +1,20 @@
 import CheckoutButton from "../components/CheckoutButton";
 
-const BEFORE = [
-  "pedidos genéricos",
-  "produto alterado",
-  "artes sem padrão",
-  "retrabalho",
-  "dependência constante",
-];
+const BEFORE = ["pedidos vagos", "produtos alterados", "falta de padrão", "retrabalho"];
 
 const AFTER = [
   "planejamento organizado",
-  "direção visual definida",
+  "direção visual",
   "restrições claras",
-  "processo de correção",
-  "mais consistência nas divulgações",
+  "correções específicas",
+  "mais consistência",
 ];
 
 export default function ProductPresentation() {
   return (
     <section className="section section-muted" aria-labelledby="product-title">
       <div className="container">
-        <h2 id="product-title">Conheça o Artes que Vendem com ChatGPT</h2>
-        <p className="section-lead">
-          Um manual visual e prático para quem precisa divulgar produtos, mas
-          não domina design e não quer perder horas testando comandos vagos.
-        </p>
+        <h2 id="product-title">Um processo claro para criar, avaliar e corrigir</h2>
 
         <div className="compare-grid">
           <div className="compare-column compare-before">
@@ -45,8 +35,8 @@ export default function ProductPresentation() {
           </div>
         </div>
 
-        <CheckoutButton location="product">
-          QUERO ACESSAR O EBOOK
+        <CheckoutButton location="method">
+          QUERO APRENDER O MÉTODO
         </CheckoutButton>
       </div>
     </section>
