@@ -179,7 +179,7 @@ export default function Home() {
           <div className="offer-card">
             <div className="offer-name"><span>OFERTA COMPLETA</span><h3>MÉTODO PRODUTO</h3></div>
             <ul className="offer-list"><li>Método completo</li><li>70 prompts</li><li>Checklist profissional</li><li>Guia de tamanhos</li><li>Acesso imediato</li><li>Atualizações futuras</li></ul>
-            <div className="price-block"><span>PAGAMENTO ÚNICO</span><strong><small>R$</small> 37,90</strong><em>sem mensalidade</em></div>
+            <div className="price-block"><span>PAGAMENTO ÚNICO</span><strong><small>R$</small> 10,90</strong><em>sem mensalidade</em></div>
             <BuyButton>QUERO ACESSAR O MÉTODO AGORA</BuyButton>
             <div className="offer-trust"><span>🔒 Compra segura</span><span>⚡ Acesso imediato</span><span>🛡 7 dias de garantia</span></div>
           </div>
