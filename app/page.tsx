@@ -103,7 +103,7 @@ export default function Home() {
           </div>
           <div className="hero-demo">
             <span className="demo-kicker">FOTO COMUM → ARTE PROFISSIONAL</span>
-            <div className="hero-comparison"><div><span>ANTES</span><ProductImage src="/examples/taca-antes.jpg" alt="Foto original de uma taça de vidro segurada com a mão" /></div><div className="versus">→</div><div><span>DEPOIS</span><ProductImage src="/examples/taca-depois.png" alt="Arte profissional criada para divulgar a taça de vidro" fit="contain" /></div></div>
+            <div className="hero-comparison"><div><span>ANTES</span><ProductImage src="/public/examples/taca-antes.jpg" alt="Foto original de uma taça de vidro segurada com a mão" /></div><div className="versus">→</div><div><span>DEPOIS</span><ProductImage src="/public/examples/taca-depois.png" alt="Arte profissional criada para divulgar a taça de vidro" fit="contain" /></div></div>
             <p>Um produto real, apresentado com mais contexto, cuidado e valor.</p>
           </div>
           <div className="hero-actions">
@@ -129,9 +129,9 @@ export default function Home() {
         <div className="container">
           <header className="section-head center"><span className="eyebrow">VEJA NA PRÁTICA</span><h2>Veja o que uma foto comum pode se tornar.</h2><p>O produto continua o mesmo. O que muda é a apresentação.</p></header>
           <div className="comparison-grid" ref={carouselRef} onScroll={updateSlide}>
-            <Comparison before="/examples/hamburguer-antes.jpg" after="/examples/hamburguer-stories-depois.webp" channel="Stories" title="Hambúrguer" />
-            <Comparison before="/examples/cadeira-antes.webp" after="/examples/cadeira-catalogo-depois.png" channel="Catálogo WhatsApp" title="Cadeira de madeira" />
-            <Comparison before="/examples/hidratante-antes.jpg" after="/examples/hidratante-feed-depois.png" channel="Feed" title="Hidratante natural" />
+            <Comparison before="/public/examples/hamburguer-antes.jpg" after="/public/examples/hamburguer-stories-depois.webp" channel="Stories" title="Hambúrguer" />
+            <Comparison before="/public/examples/cadeira-antes.webp" after="/public/examples/cadeira-catalogo-depois.png" channel="Catálogo WhatsApp" title="Cadeira de madeira" />
+            <Comparison before="/public/examples/hidratante-antes.jpg" after="/public/examples/hidratante-feed-depois.png" channel="Feed" title="Hidratante natural" />
           </div>
           <div className="carousel-controls" aria-label="Controles da galeria">
             <button onClick={() => goToSlide(slide - 1)} disabled={slide === 0} aria-label="Exemplo anterior">←</button>
