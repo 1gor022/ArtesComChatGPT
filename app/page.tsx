@@ -19,7 +19,7 @@ const faqs = [
   ["Preciso pagar pelo ChatGPT?", "Não necessariamente. Você pode começar com a versão disponível para você; recursos e limites variam conforme o plano."],
   ["Funciona com diferentes tipos de produtos?", "Sim. A estrutura pode ser adaptada a diferentes categorias de produtos físicos."],
   ["Como recebo o conteúdo?", "O acesso ao material digital é liberado após a confirmação do pagamento pela plataforma."],
-  ["O pagamento é único?", "Sim. Você paga R$37,90 uma única vez, sem mensalidade."],
+  ["O pagamento é único?", "Sim. Você paga R$10,90 uma única vez, sem mensalidade."],
   ["E se eu não gostar?", "Você poderá solicitar o reembolso dentro do prazo de 7 dias, conforme as condições da plataforma."],
 ];
 
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
           <div className="hero-actions">
             <ul className="check-list"><li>Valorize a apresentação dos seus produtos</li><li>Crie para Instagram, Stories e WhatsApp</li><li>Método passo a passo + prompts prontos</li></ul>
-            <div className="hero-price"><strong>Método completo + 3 bônus por R$37,90</strong><span>Pagamento único • Acesso imediato • Garantia de 7 dias</span></div>
+            <div className="hero-price"><strong>Método completo + 3 bônus por R$10,90</strong><span>Pagamento único • Acesso imediato • Garantia de 7 dias</span></div>
             <BuyButton>QUERO CRIAR ARTES MAIS PROFISSIONAIS</BuyButton>
           </div>
         </div>
@@ -191,13 +191,13 @@ export default function Home() {
         <div className="container narrow">
           <header className="section-head center"><span className="eyebrow light">DÚVIDAS RÁPIDAS</span><h2>Perguntas frequentes</h2></header>
           <div className="faq-list">{faqs.map(([question, answer], index) => <article className={openFaq === index ? "open" : ""} key={question}><button onClick={() => setOpenFaq(openFaq === index ? null : index)} aria-expanded={openFaq === index}><span>{question}</span><b aria-hidden="true">+</b></button><div className="faq-answer"><p>{answer}</p></div></article>)}</div>
-          <div className="final-cta"><span className="eyebrow orange">DÊ O PRÓXIMO PASSO</span><h2>Seu produto já existe.<br />Agora apresente ele à altura.</h2><p>Aprenda uma estrutura simples para transformar fotos comuns em divulgações mais profissionais usando ChatGPT.</p><strong className="final-price">R$37,90</strong><BuyButton>QUERO ACESSAR O MÉTODO</BuyButton><span className="final-meta">Pagamento único • acesso imediato • garantia de 7 dias</span></div>
+          <div className="final-cta"><span className="eyebrow orange">DÊ O PRÓXIMO PASSO</span><h2>Seu produto já existe.<br />Agora apresente ele à altura.</h2><p>Aprenda uma estrutura simples para transformar fotos comuns em divulgações mais profissionais usando ChatGPT.</p><strong className="final-price">R$10,90</strong><BuyButton>QUERO ACESSAR O MÉTODO</BuyButton><span className="final-meta">Pagamento único • acesso imediato • garantia de 7 dias</span></div>
         </div>
       </section>
 
       <footer><div className="container"><strong>MÉTODO <em>PRODUTO</em></strong><nav aria-label="Links legais"><a href="#">Termos de Uso</a><a href="#">Política de Privacidade</a><a href="#">Política de Reembolso</a><a href="mailto:contato@artesquevendem.com.br">Contato</a></nav><p>© 2026 Artes que Vendem com ChatGPT.</p><small>Este produto não garante resultados financeiros. Os resultados dependem da aplicação do conteúdo, da qualidade das imagens e das características de cada negócio.</small></div></footer>
 
-      <div className={`mobile-sticky ${sticky ? "visible" : ""}`} aria-hidden={!sticky}><div><span>Método PRODUTO</span><strong>R$37,90</strong></div><BuyButton compact>ACESSAR</BuyButton></div>
+      <div className={`mobile-sticky ${sticky ? "visible" : ""}`} aria-hidden={!sticky}><div><span>Método PRODUTO</span><strong>R$10,90</strong></div><BuyButton compact>ACESSAR</BuyButton></div>
     </main>
   );
 }
